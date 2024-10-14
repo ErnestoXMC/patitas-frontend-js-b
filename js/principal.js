@@ -16,10 +16,7 @@ function mostrarAlerta(mensaje) {
     msgSuccess.innerHTML = mensaje;
     msgSuccess.style.display = 'block';
 }
-function ocultarAlerta() {
-    msgSuccess.innerHTML = '';
-    msgSuccess.style.display = 'none';
-}
+
 
 
 async function cerrarSesion(){
@@ -56,8 +53,6 @@ async function cerrarSesion(){
         console.log('Error: Ocurrio un problema con la autenticacion, enviado desde el catch', error);
         mostrarAlerta('Error: Ocurrio un problema con la autenticacion');
     }
-
-
 }
 
 
